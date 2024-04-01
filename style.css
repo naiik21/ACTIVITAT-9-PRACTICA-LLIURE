@@ -1,0 +1,365 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 35px !important;
+    color: #7A6456 !important;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff8000;
+    margin-bottom: 3% !important;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+header nav {
+    z-index: 1;
+    position: fixed;
+    background-color: #000000;
+    width: 100%;
+    height: 61px;
+}
+
+header nav div {
+    float: right;
+    padding: 1rem;
+}
+
+header nav div a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav div:hover {
+    background-color: #E36A19;
+    text-decoration: underline;
+    text-decoration-color: #E36A19;
+}
+
+@keyframes quiet {
+    25% {
+        transform: scaleY(.6);
+    }
+
+    50% {
+        transform: scaleY(.4);
+    }
+
+    75% {
+        transform: scaleY(.8);
+    }
+}
+
+@keyframes normal {
+    25% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(.4);
+    }
+
+    75% {
+        transform: scaleY(.6);
+    }
+}
+
+@keyframes loud {
+    25% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(.4);
+    }
+
+    75% {
+        transform: scaleY(1.2);
+    }
+}
+
+
+.boxContainer {
+    z-index: 1;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    --boxSize: 8px;
+    --gutter: 4px;
+    width: 100%;
+}
+
+.box {
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #8E5F3F;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+}
+
+.text-header {
+    color: #E36A19;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    right: 0;
+    height: fit-content;
+    bottom: 0;
+    margin: auto;
+    font-size: 200px;
+    font-family: "Iceland", sans-seri;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+.box1 {
+    animation-name: quiet;
+}
+
+.box2 {
+    animation-name: normal;
+}
+
+.box3 {
+    animation-name: quiet;
+}
+
+.box4 {
+    animation-name: loud;
+}
+
+.box5 {
+    animation-name: quiet;
+}
+
+.contenedor {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    margin: 0px 20%;
+    padding-bottom: 5%;
+}
+
+.carousel {
+    margin: 0 20%;
+}
+
+.carousel-caption {
+    color: white !important;
+    background: rgb(0, 0, 0) !important;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 1) 100%) !important;
+    right: auto !important;
+    left: auto !important;
+    width: 100%;
+    bottom: 0 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) invert(1) !important;
+}
+
+.btn-primary {
+    background-color: #E36A19 !important;
+    border-color: #E36A19 !important;
+}
+
+.show .mas-info {
+    color: black !important;
+}
+
+.canciones-del-momento>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    justify-items: center;
+}
+
+
+.card {
+    border: solid 2px white !important;
+}
+
+.card-body {
+    border-bottom-left-radius: var(--bs-card-inner-border-radius);
+    border-bottom-right-radius: var(--bs-card-inner-border-radius);
+    color: white !important;
+}
+
+.btn-outline-primary {
+    color: white !important;
+    border-color: white !important;
+}
+
+.armado-y-peligroso {
+    background-color: #A02800;
+}
+
+.todo-lit {
+    background-color: #782820;
+}
+
+.mal-de-amores {
+    background-color: #383838;
+}
+
+.alexademie {
+    background-color: #1E7AC6;
+}
+
+
+.generos {
+    margin-top: 5%;
+}
+
+.progress {
+    margin: 1% 0px;
+}
+
+.progress-bar {
+    color: #ffffff !important;
+    background-color: #FA8232 !important;
+}
+
+/* progress-bar-animated */
+.reggaeton {
+    width: 50% !important;
+}
+
+.rap {
+    width: 95% !important;
+}
+
+.trap {
+    width: 100% !important;
+}
+
+.techno {
+    width: 20% !important;
+}
+
+.discos-del-momento {
+    padding-bottom: 10%;
+}
+
+.discos-del-momento>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    justify-items: center;
+}
+
+.galerias-deva {
+    background-color: #904038;
+}
+
+.el-after-del-after {
+    background-color: #2F7FA7;
+}
+
+.x-si-ens-veiem-en-un-altra-vida {
+    background-color: #587B8D;
+}
+
+.el-hombre-hace-planes-dios-se-rie {
+    background-color: #8C7444;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+footer div {
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    color: #E36A19;
+    font-size: 25px;
+    font-family: "Iceland";
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+
+@media(max-width:1024px) {
+    .card {
+        width: 12rem !important;
+    }
+}
+
+@media(max-width:768px) {
+    .text-header {
+        font-size: 150px;
+    }
+
+    .show .mas-info {
+        width: 100%;
+    }
+}
+
+@media(max-width:700px) {
+    article {
+        margin: 0px 4%;
+        padding-bottom: 20%;
+    }
+
+    .text-header {
+        font-size: 90px;
+    }
+
+    .carousel {
+        margin: 0px 10%;
+    }
+
+    .card {
+        width: 18rem !important;
+    }
+
+    .canciones-del-momento>div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2%;
+    }
+
+    .discos-del-momento>div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2%;
+    }
+
+    .generos {
+        margin-top: 25%;
+    }
+
+    .discos-del-momento {
+        padding-bottom: 30%;
+    }
+
+
+}
